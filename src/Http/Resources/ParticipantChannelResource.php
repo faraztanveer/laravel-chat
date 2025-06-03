@@ -10,7 +10,7 @@ class ParticipantChannelResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'members' => $this->participants->map(fn($user) => [
+            'members' => $this->participants->map(fn ($user) => [
                 'id' => $user->id,
                 'name' => $user->name ?? ($user->full_name ?? null),
                 'email' => $user->email,

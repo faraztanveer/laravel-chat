@@ -2,8 +2,8 @@
 
 namespace Faraztanveer\LaravelChat\Http\Controllers;
 
-use Faraztanveer\LaravelChat\Models\ChatChannel;
 use Faraztanveer\LaravelChat\Http\Resources\MessageResource;
+use Faraztanveer\LaravelChat\Models\ChatChannel;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
