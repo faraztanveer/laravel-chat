@@ -2,9 +2,9 @@
 
 namespace Faraztanveer\LaravelChat\Tests;
 
+use Faraztanveer\LaravelChat\LaravelChatServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Faraztanveer\LaravelChat\LaravelChatServiceProvider;
 
 class TestCase extends Orchestra
 {

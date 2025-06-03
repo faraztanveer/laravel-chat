@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Faraztanveer\LaravelChat\Http\Controllers\ChatController;
 use Faraztanveer\LaravelChat\Http\Controllers\MessageController;
+use Illuminate\Support\Facades\Route;
 
 Route::middleware(config('laravel-chat.route_middleware', ['auth:sanctum']))
     ->prefix(config('laravel-chat.route_prefix', 'chat'))
