@@ -1,4 +1,5 @@
 <?php
+
 return [
     'participant_model' => App\Models\User::class,
 

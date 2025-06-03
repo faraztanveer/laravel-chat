@@ -27,7 +27,6 @@ return new class extends Migration
             $table->foreignId('channel_id')->constrained('chat_channels')->cascadeOnDelete();
             $table->unsignedBigInteger('sender_id')->index();
 
-
             $table->text('body');
             $table->timestamps();
         });
