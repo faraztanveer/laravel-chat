@@ -11,7 +11,7 @@ class MessageResource extends JsonResource
         return [
             'id' => $this->id,
             'sender_id' => $this->sender_id,
-            'sender_name' => optional($this->sender)->name,
+            'sender_name' => $this->sender ? $this->sender->getChatDisplayName() : null,
             'body' => $this->body,
             'channel_id' => $this->channel_id,
             'time' => $this->created_at?->format('H:i'),

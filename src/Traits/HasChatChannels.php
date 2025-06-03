@@ -15,4 +15,12 @@ trait HasChatChannels
             'channel_id'
         );
     }
+
+    /**
+     * Returns display name for chat. Override in your model for custom logic.
+     */
+    public function getChatDisplayName()
+    {
+        return $this->name;
+    }
 }

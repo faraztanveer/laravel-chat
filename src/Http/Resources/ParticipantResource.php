@@ -4,14 +4,15 @@ namespace Faraztanveer\LaravelChat\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ParticipantChannelResource extends JsonResource
+class ParticipantResource extends JsonResource
 {
     public function toArray($request)
     {
         return [
             'id' => $this->id,
-            'members' => ParticipantResource::collection($this->participants),
-            'last_message' => new MessageResource($this->messages()->latest()->first()),
+            'name' => $this->getChatDisplayName(),
+            'email' => $this->email,
+            // Optionally add more fields or custom metadata here
         ];
     }
 }

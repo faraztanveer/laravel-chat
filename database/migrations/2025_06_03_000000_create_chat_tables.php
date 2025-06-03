@@ -16,7 +16,7 @@ return new class extends Migration {
         Schema::create('participant_chat_channels', function (Blueprint $table) {
             $table->id();
             $table->foreignId('channel_id')->constrained('chat_channels')->cascadeOnDelete();
-            $table->foreignId('participant_id')->constrained('participants')->cascadeOnDelete();
+            $table->unsignedBigInteger('participant_id')->index();
             $table->timestamps();
             $table->unique(['channel_id', 'participant_id']);
         });
@@ -24,7 +24,9 @@ return new class extends Migration {
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->foreignId('channel_id')->constrained('chat_channels')->cascadeOnDelete();
-            $table->foreignId('sender_id')->constrained('participants')->cascadeOnDelete();
+            $table->unsignedBigInteger('sender_id')->index();
+
+
             $table->text('body');
             $table->timestamps();
         });
