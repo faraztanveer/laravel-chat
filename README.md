@@ -286,10 +286,10 @@ This package is open-sourced software licensed under the [MIT License](LICENSE.m
 
 ⭐ **Star this repository if it helped you!**
 
-[🐛 Report Bug](https://github.com/faraztanveer/laravel-chat/issues) • [💡 Request Feature](https://github.com/faraztanveer/laravel-chat/issues) • [🐦 Twitter](https://twitter.com/faraztanveer)
+[🐛 Report Bug](https://github.com/faraztanveer/laravel-chat/issues) • [💡 Request Feature](https://github.com/faraztanveer/laravel-chat/issues) • [🐦 X](https://X.com/faraz_dev)
 
-**Support the project**
+#**Support the project**
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/faraztanveer)
+#[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/faraztanveer)
 
 </div>
