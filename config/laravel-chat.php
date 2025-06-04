@@ -1,4 +1,5 @@
 <?php
+
 return [
     // model for the chat
     'participant_model' => App\Models\User::class,
