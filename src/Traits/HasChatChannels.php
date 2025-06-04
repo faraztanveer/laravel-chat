@@ -24,7 +24,6 @@ trait HasChatChannels
         return $this->name;
     }
 
-
     public function chatParticipantColumns()
     {
         return ['id', 'name', 'email']; // Add more as needed

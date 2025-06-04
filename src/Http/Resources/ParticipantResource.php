@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Faraztanveer\LaravelChat\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
