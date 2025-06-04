@@ -1,7 +1,5 @@
 # 💬 Laravel Chat
 
-# 💬 Laravel Chat
-
 <div align="center">
 
 [![Latest Version](https://img.shields.io/packagist/v/faraztanveer/laravel-chat?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
