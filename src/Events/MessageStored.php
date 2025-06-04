@@ -3,7 +3,6 @@
 namespace Faraztanveer\LaravelChat\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Faraztanveer\LaravelChat\Models\Message;
 
 class MessageStored
 {

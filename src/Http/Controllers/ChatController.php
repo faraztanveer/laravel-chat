@@ -26,21 +26,20 @@ class ChatController extends Controller
         $channel_resource = new ParticipantChannelResource($channel);
         event(new \Faraztanveer\LaravelChat\Events\ChatChannelCreated($channel_resource));
 
-
         return $channel_resource;
     }
 
     public function getChannels(Request $request)
     {
         $user = $request->user();
-        $channels = $user->channels()->with(['participants', 'messages' => fn($q) => $q->latest()->first()])->get();
+        $channels = $user->channels()->with(['participants', 'messages' => fn ($q) => $q->latest()->first()])->get();
 
         return ParticipantChannelResource::collection($channels);
     }
 
     public function getChannel(Request $request)
     {
-        $channel = ChatChannel::with(['participants', 'messages' => fn($q) => $q->latest()->first()])
+        $channel = ChatChannel::with(['participants', 'messages' => fn ($q) => $q->latest()->first()])
             ->findOrFail($request->input('channel_id'));
 
         return new ParticipantChannelResource($channel);
