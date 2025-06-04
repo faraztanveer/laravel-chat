@@ -249,7 +249,7 @@ We welcome contributions! Here's how you can help make Laravel Chat even better:
 
 ## 🛡️ Security
 
-Security is a top priority. If you discover any security-related issues, please email **security@faraztanveer.com** instead of using the issue tracker.
+Security is a top priority. If you discover any security-related issues, please email **faraz.io@outlook.com** instead of using the issue tracker.
 
 See [SECURITY.md](SECURITY.md) for our security policy and vulnerability reporting process.
 
