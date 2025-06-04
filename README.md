@@ -1,12 +1,20 @@
 # 💬 Laravel Chat
 
+# 💬 Laravel Chat
+
 <div align="center">
 
 [![Latest Version](https://img.shields.io/packagist/v/faraztanveer/laravel-chat?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
-[![Code Style](https://img.shields.io/github/actions/workflow/status/faraztanveer/laravel-chat/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=for-the-badge&logo=php)](https://github.com/faraztanveer/laravel-chat/actions)
 [![Downloads](https://img.shields.io/packagist/dt/faraztanveer/laravel-chat?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/faraztanveer/laravel-chat?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
+[![GitHub Stars](https://img.shields.io/github/stars/faraztanveer/laravel-chat?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faraztanveer/laravel-chat)
+[![GitHub Forks](https://img.shields.io/github/forks/faraztanveer/laravel-chat?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faraztanveer/laravel-chat)
+[![Code Style](https://img.shields.io/github/actions/workflow/status/faraztanveer/laravel-chat/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=for-the-badge&logo=php)](https://github.com/faraztanveer/laravel-chat/actions)
 [![PHP Version](https://img.shields.io/packagist/php-v/faraztanveer/laravel-chat?style=for-the-badge&logo=php&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
 [![Laravel Version](https://img.shields.io/badge/laravel-12+-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![License](https://img.shields.io/github/license/faraztanveer/laravel-chat?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faraztanveer/laravel-chat/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/faraztanveer/laravel-chat?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faraztanveer/laravel-chat/commits)
+[![Made with Love](https://img.shields.io/badge/made%20with-❤️-red?style=for-the-badge)](https://github.com/faraztanveer/laravel-chat)
 
 **🚀 A blazingly fast, modern chat system for Laravel 12+**
 
@@ -15,6 +23,8 @@
 [📦 Installation](#-installation) • [✨ Features](#-features) • [⚙️ Quick Start](#%EF%B8%8F-quick-start) • [📡 API Reference](#-api-reference) • [🤝 Contributing](#-contributing)
 
 </div>
+
+---
 
 ---
 
