@@ -3,7 +3,6 @@
 <div align="center">
 
 [![Latest Version](https://img.shields.io/packagist/v/faraztanveer/laravel-chat?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
-[![Tests](https://img.shields.io/github/actions/workflow/status/faraztanveer/laravel-chat/run-tests.yml?branch=main&label=tests&style=for-the-badge&logo=github)](https://github.com/faraztanveer/laravel-chat/actions)
 [![Code Style](https://img.shields.io/github/actions/workflow/status/faraztanveer/laravel-chat/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=for-the-badge&logo=php)](https://github.com/faraztanveer/laravel-chat/actions)
 [![Downloads](https://img.shields.io/packagist/dt/faraztanveer/laravel-chat?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/faraztanveer/laravel-chat)
 
