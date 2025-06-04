@@ -23,9 +23,10 @@ class MessageController extends Controller
             'body' => $request->input('body'),
         ]);
 
-        // You can add event broadcasting here for new messages if needed
+        $message_resource = new MessageResource($message);
+        event(new \Faraztanveer\LaravelChat\Events\MessageStored($message_resource));
 
-        return new MessageResource($message);
+        return $message_resource;
     }
 
     public function index(Request $request)
