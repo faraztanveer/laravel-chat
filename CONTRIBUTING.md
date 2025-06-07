@@ -16,7 +16,7 @@ We use GitHub to host code, track issues and feature requests, as well as accept
 
 - PHP 8.2 or higher
 - Composer
-- Laravel 10.x, 11.x, or 12.x
+- Laravel 12.0 or higher
 - Git
 
 ### Local Development Setup
