@@ -32,14 +32,14 @@ class ChatController extends Controller
     public function getChannels(Request $request)
     {
         $user = $request->user();
-        $channels = $user->channels()->with(['participants', 'messages' => fn($q) => $q->latest()->first()])->get();
+        $channels = $user->channels()->with(['participants', 'messages' => fn ($q) => $q->latest()->first()])->get();
 
         return ChatChannelResource::collection($channels);
     }
 
     public function getChannel(Request $request)
     {
-        $channel = ChatChannel::with(['participants', 'messages' => fn($q) => $q->latest()->first()])
+        $channel = ChatChannel::with(['participants', 'messages' => fn ($q) => $q->latest()->first()])
             ->findOrFail($request->input('channel_id'));
 
         return new ChatChannelResource($channel);
