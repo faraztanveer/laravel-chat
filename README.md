@@ -229,8 +229,87 @@ return [
 ];
 ```
 
+---
 
+## 🪝 Event Listeners & Extending Chat Actions
 
+This package dispatches events when key chat actions occur, allowing you to react (broadcast, notify, etc) in your own app—**without modifying package code**.
+
+### Listening for Chat Events
+
+You may listen for chat events by creating listeners with Artisan:
+
+```bash
+php artisan make:listener OnChatChannelCreated --event="\Faraztanveer\LaravelChat\Events\ChatChannelCreated"
+php artisan make:listener OnChatMessageStored --event="\Faraztanveer\LaravelChat\Events\MessageStored"
+```
+
+When a chat channel is created or a message is stored, your listener's `handle` method will be called automatically with the **corresponding Eloquent model**.
+
+### Example: Message Stored Listener
+
+```php
+<?php
+
+namespace App\Listeners;
+
+use Faraztanveer\LaravelChat\Events\MessageStored;
+use Faraztanveer\LaravelChat\Http\Resources\MessageResource;
+use Illuminate\Support\Facades\Log;
+
+class OnChatMessageStored
+{
+    public function handle(MessageStored $event): void
+    {
+        // $event->message is the Message model instance
+        // Log with a resource for consistent structure as used in API responses
+        Log::debug('Chat message stored', [
+            'event' => new MessageResource($event->message),
+        ]);
+        
+        // Add any custom logic here (broadcast, notifications, etc)
+    }
+}
+```
+
+### Example: Channel Created Listener
+
+```php
+<?php
+
+namespace App\Listeners;
+
+use Faraztanveer\LaravelChat\Events\ChatChannelCreated;
+use Faraztanveer\LaravelChat\Http\Resources\ChatChannelResource;
+use Illuminate\Support\Facades\Log;
+
+class OnChatChannelCreated
+{
+    public function handle(ChatChannelCreated $event): void
+    {
+        // $event->channel is the ChatChannel model instance
+        Log::debug('Chat channel created', [
+            'event' => new ChatChannelResource($event->channel),
+        ]);
+        
+        // Custom logic here (notify users, update UI, etc)
+    }
+}
+```
+
+### Resource Classes
+
+The package provides resource classes (e.g. `MessageResource`, `ChatChannelResource`) which convert your models into the **same format as your API responses**.
+
+You can use these in your listeners for logging, broadcasting, or passing structured data to your frontend—ensuring consistency between your API and event-driven features.
+
+### What You Get in Your Listener
+
+- **For message events:** `$event->message` is a full `Message` Eloquent model.
+- **For channel events:** `$event->channel` is a full `ChatChannel` Eloquent model.
+- Use the provided resources for serialization if needed.
+
+**That's it!** Your app can now respond to every chat action, with models and resources consistent with your APIs. For advanced event usage, see the Laravel Events documentation.
 
 ---
 

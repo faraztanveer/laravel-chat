@@ -24,7 +24,7 @@ class MessageController extends Controller
         ]);
 
         $message_resource = new MessageResource($message);
-        event(new \Faraztanveer\LaravelChat\Events\MessageStored($message_resource));
+        event(new \Faraztanveer\LaravelChat\Events\MessageStored($message));
 
         return $message_resource;
     }

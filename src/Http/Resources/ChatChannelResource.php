@@ -4,7 +4,7 @@ namespace Faraztanveer\LaravelChat\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ParticipantChannelResource extends JsonResource
+class ChatChannelResource extends JsonResource
 {
     public function toArray($request)
     {
